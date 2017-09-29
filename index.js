@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('wwwroot'));
 
 app.get('/', function (req, res) {
-    res.sendFile(path + 'login.html');
+    res.sendFile(path + 'index.html');
 });
 
 app.get('/testdigselv', function (req, res) {
@@ -22,7 +22,7 @@ app.get('/login', function (req, res) {
 });
 
 app.post('/login', function (req, res) {
-    if (req.body.user === 'ali') {
+    if (req.body.user === 'ahmad') {
         res.sendFile(path + 'index.html', function (err) {
         });
     } else {
@@ -34,12 +34,6 @@ app.post('/login', function (req, res) {
 
 app.get('/index', function (req, res) {
     res.sendFile(path + 'index.html', function (err) {
-        // handle error
-    });
-});
-
-app.get('/contact', function (req, res) {
-    res.sendFile(path + 'contact.html', function (err) {
         // handle error
     });
 });
