@@ -1,0 +1,279 @@
+/*css reset*/
+body, ul ,li{
+	margin: 0;
+	padding: 0;
+}
+/*********************************/
+
+/*clearfix sættes til elementer som indeholder floated element*/
+.clearfix:before, .clearfix:after {
+    content: " "; /* generere indhold som er tom */
+    display: table; /* det indhold som du generere vil blive til table cell. Det vil hjælpe med collapsing margin problemer */
+}
+.clearfix:after {
+    clear: both;
+}
+/*********************************/
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+body{
+	background-color: #f5f5f5;
+}
+/*********************************/
+
+/*logo*/
+header .logo{
+	display: inline-block;
+	float: left;
+}
+
+header .logo a{
+	text-decoration: none;
+	color: #3a3a3a;
+}
+
+header .logo a:hover{
+	color: #000000;
+}
+
+header .logo img{
+	width: 111px;
+	height: 50px;
+}
+
+header .logo span{
+	position: relative;
+    left: 5%;
+    top: -15px;
+}
+
+/*main nav*/
+header .main_nav{
+	float: right;
+}
+
+header .main_nav ul{
+	list-style-type: none;
+	margin-top: 30px;
+}
+
+header .main_nav ul li{
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+header .main_nav ul li a{
+	color: #3a3a3a;
+}
+
+header .main_nav ul li a:hover{
+	color: #000000;
+}
+
+header .main_nav ul li:first-of-type a{
+	text-decoration: none;
+}
+/*********************************/
+
+article#top_top{
+	position: relative;
+}
+
+article#top_top h1{
+	font-size: 60px;
+}
+
+article#top_top #intro{
+	float: left;
+}
+
+#intro p{
+	font-size: 20px;
+}
+/******/
+
+/*tilmeld*/
+article#top_top #subscribe{
+	float: right;
+}
+
+#subscribe button{
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+    left: 75%;
+    top: 78%;
+}
+
+#subscribe button{
+	padding: 6px;
+	outline: none; 
+	background-color: #dadada;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 5px #aeaeae;
+}
+
+#subscribe button:active{
+	background-color: #888888;
+}
+
+#subscribe button a{
+	text-decoration: none;
+	color: #3a3a3a;
+}
+/******/
+
+/*video link*/
+article#top_bottom{
+	width: 960px;
+    height: 275px;
+	margin: 0px auto 60px;
+}
+
+article#top_bottom iframe{
+	width: 100%;
+	height: 100%;
+}
+/*********************************/
+
+div#bottom_headline h2{
+	font-size: 40px;
+	text-align: center;
+}
+
+div#bottom_trending{
+	display: flex;
+}
+
+#bottom_left{
+	flex: 0 1 40%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+#bottom_left article{
+	position: relative;
+	margin: 20px 0px;
+}
+
+#bottom_left article img{
+	width: 50%;
+}
+
+#bottom_left article p{
+	display: inline-block;
+	position: absolute;
+	color: #3a3a3a;
+	font-size: 20px;
+    left: 55%;
+    top: 0%;
+}
+/******/
+
+#bottom_right{
+	flex: 0 1 60%;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#bottom_right img{
+	width: 32%;
+	height: auto;
+}
+/*********************************/
+
+div#bottom_info{
+	position: relative;
+    margin-bottom: 100px;
+}
+
+div#bottom_info .secondary_nav{
+	float: left;
+}
+
+.secondary_nav ul{
+	list-style-type: none;
+	margin-top: 30px;
+}
+
+.secondary_nav ul li{
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+.secondary_nav ul li a{
+	color: #3a3a3a;
+	text-decoration: none;
+}
+
+.secondary_nav ul li a:hover{
+	color: #000000;
+}
+/******/
+
+div#bottom_info .more_pages_link{
+	float: right;
+}
+
+.more_pages_link button{
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+    left: 70%;
+    top: 40%;
+}
+
+.more_pages_link button{
+    padding: 5px 100px;
+	outline: none; 
+	background-color: #dadada;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 5px #aeaeae;
+}
+
+.more_pages_link button:active{
+	background-color: #888888;
+}
+
+.more_pages_link button a{
+	text-decoration: none;
+	color: #3a3a3a;
+}
+/*********************************/
+
+footer{
+	font-size: 20px;
+    height: 50px;
+    background-color: #071845;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
