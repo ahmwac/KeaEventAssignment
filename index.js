@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('wwwroot'));
 
 app.get('/', function (req, res) {
-    res.sendFile(path + 'index.html');
+    res.sendFile(path + 'login.html');
 });
 
 app.get('/testdigselv', function (req, res) {
