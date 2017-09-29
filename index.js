@@ -38,4 +38,10 @@ app.get('/index', function (req, res) {
     });
 });
 
+app.get('/contact', function (req, res) {
+    res.sendFile(path + 'contact.html', function (err) {
+        // handle error
+    });
+});
+
 app.listen(process.env.PORT || 3000);
